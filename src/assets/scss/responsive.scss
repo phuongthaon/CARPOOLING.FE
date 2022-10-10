@@ -1,0 +1,21 @@
+// General theme contents
+@import "utils/variables";
+@import "themes/responsive";
+
+.on-click-dropdown {
+  &.active {
+    .on-click-show-div {
+      opacity: 0;
+      transform: none;
+      visibility: hidden;
+
+      &.active {
+        opacity: 1;
+        transform: translateY(0px);
+        visibility: visible;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+    }
+  }
+}
